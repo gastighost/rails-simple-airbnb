@@ -1,18 +1,19 @@
-<div class="card my-1">
+<div class="container">
+<div class="card my-1 w-50">
   <div class="card-body">
     <h2><%= @flat.name %></h2>
     <p><%= @flat.address %></p>
   </div>
 </div>
 
-<div class="card my-1">
+<div class="card my-1 w-50">
   <div class="card-body">
     <h3>A bit more about this flat...</h3>
     <p><%= @flat.description %></p>
   </div>
 </div>
 
-<div class="card my-1">
+<div class="card my-1 w-50">
   <div class="card-body">
     <h3>Details</h3>
     <p>Number of guests: <%= @flat.number_of_guests %></p>
@@ -26,3 +27,4 @@
                   flat_path(@flat),
                   method: :delete,
                   data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+</div>
